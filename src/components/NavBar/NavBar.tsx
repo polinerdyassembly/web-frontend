@@ -1,5 +1,6 @@
 import NavBrand from "@/components/NavBar/NavBrand";
 import NavItem from "@/components/NavBar/NavItem";
+import SearchBox from "@/components/SearchBox";
 
 export default function NavBar() {
   return (
@@ -11,7 +12,11 @@ export default function NavBar() {
         <NavItem href="/about">About us</NavItem>
         <NavItem href="/references">References</NavItem>
         <NavItem href="/news">News</NavItem>
-        <NavItem href="/faq">FAQ</NavItem>
+        <NavItem href="/faq" className="me-auto">
+          FAQ
+        </NavItem>
+
+        <SearchBox />
       </div>
     </div>
   );
